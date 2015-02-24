@@ -1,6 +1,6 @@
 class Xctester < Formula
   homepage "https://github.com/neonichu/xctester"
-  url "https://github.com/neonichu/xctester.git", :tag => "0.1.1"
+  url "https://github.com/neonichu/xctester.git", :tag => "0.1.2"
   head "https://github.com/neonichu/xctester"
 
   depends_on :xcode => ["6.3"]
