@@ -2,7 +2,7 @@ require 'formula'
 
 class Chswift < Formula
   homepage 'https://github.com/neonichu/chswift#readme'
-  url "https://github.com/neonichu/chswift.git", :tag => "0.0.1"
+  url "https://github.com/neonichu/chswift.git", :tag => "0.0.2"
   head 'https://github.com/neonichu/chswift.git'
 
   def install
