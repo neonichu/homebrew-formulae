@@ -1,9 +1,11 @@
 class Cato < Formula
   homepage "https://github.com/neonichu/cato"
   url "https://github.com/neonichu/cato.git", :tag => "0.0.3"
-  head "https://github.com/neonichu/cato"
+  head "https://github.com/neonichu/cato.git"
 
   depends_on 'chswift'
+  depends_on 'cocoapods' => :ruby
+  depends_on 'cocoapods-rome' => :ruby
 
   def install
     prefix.install "bin"
