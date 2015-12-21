@@ -1,4 +1,4 @@
-class Xctester < Formula
+class Azkaban < Formula
   homepage "https://github.com/neonichu/azkaban"
   url "https://github.com/neonichu/azkaban.git", :tag => "0.1.0"
   head "https://github.com/neonichu/azkaban.git"
