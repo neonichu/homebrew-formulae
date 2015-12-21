@@ -9,7 +9,7 @@ class Azkaban < Formula
   def install
     system 'sed', '-i', '', 's/#import "Alcatraz.h"//', 'Externals/Alcatraz/Alcatraz/Packages/ATZPackage.m'
     system 'chswift-exec', '2.2', '--', 'make', '.build/debug/azkaban'
-    system 'cp', '.build/debug/azkaban', "#{prefix}/bin"
+    system 'cp', '.build/debug/azkaban', "#{prefix}/bin/azkaban"
   end
 
   test do
