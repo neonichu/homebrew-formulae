@@ -6,6 +6,7 @@ class Azkaban < Formula
   depends_on :xcode => ["7.2"]
 
   def install
+    system 'sed', '-i', '', 's/#import "Alcatraz.h"//', 'Externals/Alcatraz/Alcatraz/Packages/ATZPackage.m'
     system 'make', '.build/debug/azkaban'
     system 'cp', '.build/debug/azkaban', "#{prefix}/bin"
   end
