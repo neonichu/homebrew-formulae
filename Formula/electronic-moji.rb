@@ -7,7 +7,7 @@ class ElectronicMoji < Formula
   depends_on :xcode => ["7.2"]
 
   def install
-    system 'chswift-exec', '2.2', '--', 'make', '.build/debug/electronic-moji'
+    system 'chswift-exec', '2.2', '--', 'make'
     system 'mkdir', '-p', "#{prefix}/bin"
     system 'cp', '.build/debug/electronic-moji', "#{prefix}/bin/electronic-moji"
   end
