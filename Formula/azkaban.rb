@@ -10,6 +10,8 @@ class Azkaban < Formula
     system 'chswift-exec', '2.2', '--', 'make', '.build/debug/azkaban'
     system 'mkdir', '-p', "#{prefix}/bin"
     system 'cp', '.build/debug/azkaban', "#{prefix}/bin/azkaban"
+
+    zsh_completion.install "completions/_azkaban"
   end
 
   test do
