@@ -1,6 +1,6 @@
 class Cato < Formula
   homepage "https://github.com/neonichu/cato"
-  url "https://github.com/neonichu/cato.git", :tag => "0.1.1"
+  url "https://github.com/neonichu/cato.git", :tag => "0.2.0"
   head "https://github.com/neonichu/cato.git"
 
   depends_on 'chswift'
